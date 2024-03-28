@@ -10,7 +10,7 @@ local checkHealth
 local checkFood
 
 local choppables = game:GetService("Workspace").worldResources.choppable
-local animals = game.Workspace.animals
+local animals = game.Workspace.AI_Client
 
 local function setTreeFarming(value)
     Player:SetAttribute("farmingChoppable", value)
