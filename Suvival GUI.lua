@@ -10,7 +10,7 @@ function loadModule(url)
 end
 
 local oreModule = loadModule("https://raw.githubusercontent.com/aratonstilts/The-Survival-Game/main/modules/ore-farming.lua")
-local treeModule = loadModule("https://raw.githubusercontent.com/aratonstilts/The-Survival-Game/main/modules/choppable-farm.lua")
+local treeModule = loadModule("https://raw.githubusercontent.com/dummdogggg/The-Survival-Game/main/modules/choppable-farm.lua")
 local farmModule = loadModule("https://raw.githubusercontent.com/aratonstilts/The-Survival-Game/main/modules/farming.lua")
 local pickupRangeModule = loadModule("https://raw.githubusercontent.com/aratonstilts/The-Survival-Game/main/modules/increase-range.lua")
 
