@@ -88,8 +88,22 @@ end
 
 local function clickScreen()
     equipTool("Pickaxe")
+	local Workspace = game:GetService("Workspace")
+
+for _, Part in ipairs(Workspace:GetDescendants()) do
+    if (Part:IsA("BasePart") or Part:IsA("MeshPart")) then
+        Part.CanCollide = false
+    end
+end
     VirtualInputManager:SendMouseButtonEvent(0, 500, 0, true, game, 1)
     task.wait(0.2)
+	local Workspace = game:GetService("Workspace")
+
+for _, Part in ipairs(Workspace:GetDescendants()) do
+    if (Part:IsA("BasePart") or Part:IsA("MeshPart")) then
+        Part.CanCollide = false
+    end
+end
     VirtualInputManager:SendMouseButtonEvent(0, 500, 0, false, game, 1)
 end
 
