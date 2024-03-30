@@ -197,7 +197,7 @@ function checkHealth(ore)
 end
 
 local function findFoodInBackpack()
-    local backpack = Player.PlayerGui.Inventory.nonHotbar.menuContainer.inventory.frame.content.backpack
+    local backpack = Player.PlayerGui.Inventory.nonHotbar.menuContainer.inventory.frame.content.backpack.inventory
     
     for i,v in pairs(backpack:GetChildren()) do
         if v:IsA("ImageButton") and v:FindFirstChild("viewport") and v.viewport:FindFirstChild("stats") and v.viewport.stats:FindFirstChild("food") then
